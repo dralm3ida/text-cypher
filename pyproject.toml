@@ -1,0 +1,30 @@
+# Definition of build process of the package.
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text_cypher"
+version = "0.1.0"
+description = "Text Cypher"
+readme = "README.md"
+authors = [{ name = "André Rodrigues Almeida", email = "dralm3ida.dev@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["text_cypher", "setuptools"]
+dependencies = [
+]
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+
+[project.urls]
+repository = "https://github.com/dralm3ida/text-cypher"
+
+[project.scripts]
+cypher = "text_cypher.cypher:main"
